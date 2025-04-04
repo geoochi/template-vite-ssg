@@ -45,7 +45,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm vite-ssg build --base vite-ssg
+        run: pnpm vite-ssg build --base template-vite-ssg
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
