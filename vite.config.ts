@@ -1,30 +1,22 @@
-import type { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
-import Markdown from 'unplugin-vue-markdown/vite'
 import Pages from 'vite-plugin-pages'
 
-const config: UserConfig = {
+export default defineConfig({
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/],
+      include: [/\.vue$/],
     }),
     Pages({
-      extensions: ['vue', 'md'],
-    }),
-    Markdown({
-      headEnabled: true,
+      extensions: ['vue'],
     }),
     Components({
-      extensions: ['vue', 'md'],
-      // allow auto import and register components used in markdown
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      extensions: ['vue'],
+      include: [/\.vue$/],
     }),
   ],
   ssgOptions: {
     script: 'async',
-    formatting: 'prettify',
   },
-}
-
-export default config
+})
