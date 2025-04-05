@@ -7,6 +7,6 @@
 - vite-ssg 26
 - tailwindcss
 - shadcn-vue 2
-- vue-use
+- vue-use 13
+- pinia 3
 - lucide-icon
-- pinia
