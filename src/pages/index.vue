@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import { useHead } from '@unhead/vue'
+
+useHead({ title: 'home page' })
 </script>
 
 <template>
-  <p>Hello world</p>
-  <RouterLink to="/about">Link to About</RouterLink>
+  <p>Home Page</p>
+  <RouterLink to="/about" class="underline">link to about</RouterLink>
 </template>
