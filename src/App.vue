@@ -7,7 +7,7 @@ import '@/global.css'
 const isDark = useDark()
 
 useHead({
-  meta: [{ name: 'description', content: 'template - vite@6 - vite-ssg@26 - shadcn-vue@2' }],
+  meta: [{ name: 'description', content: 'template - vite@7 - vite-ssg@28 - shadcn-vue@2' }],
 })
 </script>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { Button } from '@/components/ui/button'
 import { useUserStore } from '@/store'
 
