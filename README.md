@@ -3,8 +3,8 @@
 ## features
 
 - vue 3
-- vite 6
-- vite-ssg 26
+- vite 7
+- vite-ssg 28
 - tailwindcss 4
 - shadcn-vue 2
 - vue-use 13
